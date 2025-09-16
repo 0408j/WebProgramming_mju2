@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+    <style>
+        .formlabel{
+            padding:10px;
+            display:block;
+        }
+        .checkboxlabel{
+            padding:10px;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>회원 가입</h2>
+    <form action="#" method="GET">
+        <label class="formlabel">아이디(4-8글자):
+            <input type="text" minlength="4" maxlength="8" name="username" required>
+        </label>
+        <label class="formlabel">비밀번호:
+            <input type="password" name="password" required>
+        </label>
+        <label class="formlabel">email:
+            <input type="email" name="email" required>
+        </label>
+        <label class="formlabel">생년월일:
+            <input type="date" name="birthday">
+        </label>
+        <div class="formlabel">
+            가입 유형
+            <label class="checkboxlabel">비회원
+                <input type="radio" name="class">
+            </label>
+            <label class="checkboxlabel">회원
+                <input type="radio" name="class">
+            </label>
+        </div>
+        <div class="formlabel">
+            어떻게 가입하셨나요?
+            <label class="checkboxlabel">웹 검색
+                <input type="checkbox" name="how">
+            </label>
+            <label class="checkboxlabel">친구 추천
+                <input type="checkbox" name="how">
+            </label>
+        </div>
+        <div class="formlabel">이 사이트를 언제 알게 되셨습니까?
+            <input type="datetime-local">
+        </div>
+        <div class="formlabel">
+            <input type="range">
+        </div>
+        <div class="formlabel">
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
