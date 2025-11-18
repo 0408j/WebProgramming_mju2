@@ -5,166 +5,178 @@
     <meta charset="UTF-8">
     <title>강동구 소개</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-        <img src="./img/logo.svg" width="50" />
-        <h1>강동구</h1>
-        <p>Gangdong-gu 江東區</p>
+        <div id="headerbar">
+            <img src="./img/logo.svg" width="50" />
+            <h1>강동구</h1>
+            <p>Gangdong-gu 江東區</p>
+        </div>
         <nav>
             <a href="./">메인</a>
             <a href="https://www.gangdong.go.kr/newportal/">강동구청</a>
             <a href="./form.html">사이버 주민 등록</a>
+            <a href="./notice.html">공지사항</a>
+            <a href="./board.html">게시판</a>
+            <a href="./sitemap.html">사이트맵</a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="sangdan">
             <h2>강동구 소개 페이지에 오신 것을 환영합니다!</h2>
             <p>강동구는<br>서울시의 <strong>최동단</strong>에 위치한 <em>자치구</em>입니다.</p>
         </section>
-        <section>
+        <section class="local">
             <!-- 강동구의 특징을 사진과 함께 보여줌 -->
             <h3>특징</h3>
-            <h4>역사가 길어요.</h4>
-            <img src="./img/amsadong.jpg" width="400"/><br>
-            <em>암사동 빗살무늬 토기</em>
-            <p>가장 대표적인 빗살무늬 토기 유적인 암사동 빗살무늬 토기가 출토되었을 정도로 오래 전부터 사람이 거주해왔던 도시에요.</p>
-            <h4>자연 친화적인 환경을 자랑해요.</h4>
-            <img src="./img/agriculture.jpg" width="400"/>
-            <p>강동구는 도심 속에서도 자연을 쉽게 접할 수 있는 녹지 공간이 풍부해요.  일자산, 길동생태공원, 강동그린웨이 등 주민들이 휴식을 취하고 여가를 즐길 수 있는 공원이 많아 '살기 좋은 도시'로 꼽히며, 도시 농업까지 이루어지고 있어요.</p>
-
-            <h4>서울 동부를 잇는 교통의 요충지</h4>
-            <img src="./img/cheonho.jpg" width="400" alt="강동역과 버스 정류장이 함께 보이는 모습">
-            <em>천호역</em>
-            <p>지하철 5호선, 8호선, 9호선이 관통하여 서울 도심 및 강남 접근성이 매우 뛰어나요. 또한, 수도권제1순환고속도로와 올림픽대로가 인접해 있어 하남, 구리 등 경기 동부권으로 향하는 관문 역할을 하는 교통의 중심지에요.</p>
+            <div>
+                <h4>역사가 길어요.</h4>
+                <img src="./img/amsadong.jpg" width="400"/><br>
+                <em>암사동 빗살무늬 토기</em>
+                <p>가장 대표적인 빗살무늬 토기 유적인 암사동 빗살무늬 토기가 출토되었을 정도로 오래 전부터 사람이 거주해왔던 도시에요.</p>
+            </div>
+            <div>
+                <h4>자연 친화적인 환경을 자랑해요.</h4>
+                <img src="./img/agriculture.jpg" width="400"/>
+                <p>강동구는 도심 속에서도 자연을 쉽게 접할 수 있는 녹지 공간이 풍부해요.  일자산, 길동생태공원, 강동그린웨이 등 주민들이 휴식을 취하고 여가를 즐길 수 있는 공원이 많아 '살기 좋은 도시'로 꼽히며, 도시 농업까지 이루어지고 있어요.</p>
+            </div>
+            <div>
+                <h4>서울 동부를 잇는 교통의 요충지</h4>
+                <img src="./img/cheonho.jpg" width="400" alt="강동역과 버스 정류장이 함께 보이는 모습">
+                <em>천호역</em>
+                <p>지하철 5호선, 8호선, 9호선이 관통하여 서울 도심 및 강남 접근성이 매우 뛰어나요. 또한, 수도권제1순환고속도로와 올림픽대로가 인접해 있어 하남, 구리 등 경기 동부권으로 향하는 관문 역할을 하는 교통의 중심지에요.</p>
+            </div>
         </section>
-        <section>
+
+        <section class="admin-info">
             <!-- 행정구역을 행정동/법정동으로 분류하여 보여줌 -->
             <h3>행정구역 정보</h3>
             <table>
                 <caption>동 목록</caption>
                 <thead>
-                    <tr>
-                        <th>법정동</th>
-                        <th>행정동</th>
-                        <th>면적</th>
-                        <th>인구</th>
-                    </tr>
+                <tr>
+                    <th>법정동</th>
+                    <th>행정동</th>
+                    <th>면적</th>
+                    <th>인구</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td colspan="2">강일동</td>
-                        <td>2.80㎢</td>
-                        <td>34,605명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">상일동</td>
-                        <td>상일제1동</td>
-                        <td>2.66㎢</td>
-                        <td>39,239명</td>
-                    </tr>
-                    <tr>
-                        <td>상일제2동</td>
-                        <td>1.09㎢</td>
-                        <td>13,535명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">고덕동</td>
-                        <td>고덕제1동</td>
-                        <td>1.73㎢</td>
-                        <td>23,818명</td>
-                    </tr>
-                    <tr>
-                        <td>고덕제2동</td>
-                        <td>2.01㎢</td>
-                        <td>25,325명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">명일동</td>
-                        <td>명일제1동</td>
-                        <td>0.61㎢</td>
-                        <td>24,830명</td>
-                    </tr>
-                    <tr>
-                        <td>명일제2동</td>
-                        <td>0.97㎢</td>
-                        <td>16,843명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">암사동</td>
-                        <td>암사제1동</td>
-                        <td>1.02㎢</td>
-                        <td>33,194명</td>
-                    </tr>
-                    <tr>
-                        <td>암사제2동</td>
-                        <td>1.18㎢</td>
-                        <td>14,572명</td>
-                    </tr>
-                    <tr>
-                        <td>암사제3동</td>
-                        <td>2.51㎢</td>
-                        <td>17,087명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">천호동</td>
-                        <td>천호제1동</td>
-                        <td>0.71㎢</td>
-                        <td>25,555명</td>
-                    </tr>
-                    <tr>
-                        <td>천호제2동</td>
-                        <td>1.57㎢</td>
-                        <td>34,307명</td>
-                    </tr>
-                    <tr>
-                        <td>천호제3동</td>
-                        <td>0.79㎢</td>
-                        <td>26,163명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">성내동</td>
-                        <td>성내제1동</td>
-                        <td>0.58㎢</td>
-                        <td>19,095명</td>
-                    </tr>
-                    <tr>
-                        <td>성내제2동</td>
-                        <td>0.67㎢</td>
-                        <td>23,833명</td>
-                    </tr>
-                    <tr>
-                        <td>성내제3동</td>
-                        <td>0.71㎢</td>
-                        <td>21,777명</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">길동</td>
-                        <td>2.17㎢</td>
-                        <td>47,553명</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">둔촌동</td>
-                        <td>둔촌제1동</td>
-                        <td>0.92㎢</td>
-                        <td>10,917명</td>
-                    </tr>
-                    <tr>
-                        <td>둔촌제2동</td>
-                        <td>0.98㎢</td>
-                        <td>24,694명</td>
-                    </tr>
+                <tr>
+                    <td colspan="2">강일동</td>
+                    <td>2.80㎢</td>
+                    <td>34,605명</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">상일동</td>
+                    <td>상일제1동</td>
+                    <td>2.66㎢</td>
+                    <td>39,239명</td>
+                </tr>
+                <tr>
+                    <td>상일제2동</td>
+                    <td>1.09㎢</td>
+                    <td>13,535명</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">고덕동</td>
+                    <td>고덕제1동</td>
+                    <td>1.73㎢</td>
+                    <td>23,818명</td>
+                </tr>
+                <tr>
+                    <td>고덕제2동</td>
+                    <td>2.01㎢</td>
+                    <td>25,325명</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">명일동</td>
+                    <td>명일제1동</td>
+                    <td>0.61㎢</td>
+                    <td>24,830명</td>
+                </tr>
+                <tr>
+                    <td>명일제2동</td>
+                    <td>0.97㎢</td>
+                    <td>16,843명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">암사동</td>
+                    <td>암사제1동</td>
+                    <td>1.02㎢</td>
+                    <td>33,194명</td>
+                </tr>
+                <tr>
+                    <td>암사제2동</td>
+                    <td>1.18㎢</td>
+                    <td>14,572명</td>
+                </tr>
+                <tr>
+                    <td>암사제3동</td>
+                    <td>2.51㎢</td>
+                    <td>17,087명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">천호동</td>
+                    <td>천호제1동</td>
+                    <td>0.71㎢</td>
+                    <td>25,555명</td>
+                </tr>
+                <tr>
+                    <td>천호제2동</td>
+                    <td>1.57㎢</td>
+                    <td>34,307명</td>
+                </tr>
+                <tr>
+                    <td>천호제3동</td>
+                    <td>0.79㎢</td>
+                    <td>26,163명</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">성내동</td>
+                    <td>성내제1동</td>
+                    <td>0.58㎢</td>
+                    <td>19,095명</td>
+                </tr>
+                <tr>
+                    <td>성내제2동</td>
+                    <td>0.67㎢</td>
+                    <td>23,833명</td>
+                </tr>
+                <tr>
+                    <td>성내제3동</td>
+                    <td>0.71㎢</td>
+                    <td>21,777명</td>
+                </tr>
+                <tr>
+                    <td colspan="2">길동</td>
+                    <td>2.17㎢</td>
+                    <td>47,553명</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">둔촌동</td>
+                    <td>둔촌제1동</td>
+                    <td>0.92㎢</td>
+                    <td>10,917명</td>
+                </tr>
+                <tr>
+                    <td>둔촌제2동</td>
+                    <td>0.98㎢</td>
+                    <td>24,694명</td>
+                </tr>
                 </tbody>
                 <tfoot>
-                    <tr>
-                        <td colspan="2"><b>합계</b></td>
-                        <td><b>24.59㎢</b></td>
-                        <td><b>499,047명</b></td>
-                    </tr>
+                <tr>
+                    <td colspan="2"><b>합계</b></td>
+                    <td><b>24.59㎢</b></td>
+                    <td><b>499,047명</b></td>
+                </tr>
                 </tfoot>
             </table>
         </section>
-        <section>
+        <section class="facilities">
             <!-- 강동구의 주요 시설과 그 시설로 가는 홈페이지 하이퍼링크 나열 -->
             <h3>주요 시설</h3>
             <ul>
